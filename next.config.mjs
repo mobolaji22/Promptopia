@@ -1,6 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Remove experimental.appDir as it's now standard
   experimental: {
     serverComponentsExternalPackages: ["mongoose"],
   },
@@ -12,7 +11,6 @@ const nextConfig = {
       },
     ],
   },
-  // webpack function can be removed if you don't need top-level await
 };
 
 export default nextConfig;
